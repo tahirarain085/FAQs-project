@@ -1,0 +1,83 @@
+.section-center {
+  width: 80vw;
+  margin: auto 0;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  max-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  color: goldenrod;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+}
+.question {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px grey;
+
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+  color: rgb(85, 77, 77);
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: grey;
+  border: transparent;
+  cursor: pointer;
+}
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+.question-text p {
+  margin-bottom: 0%;
+}
+/* hide text */
+.question-text {
+  display: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem 0 1.5rem 0;
+}
+/* show text */
+.show-text .question-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
